@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 import warnings
 warnings.filterwarnings("ignore")
 import streamlit as st
-import plotly.express as px
+import plotly.express as px  
 import plotly.graph_objects as go
 from numerize import numerize 
 st. set_page_config(layout="wide")

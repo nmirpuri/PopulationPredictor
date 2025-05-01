@@ -101,8 +101,8 @@ with col2:
                                 )
                                 ))
         fig1.update_layout(
-            width=800,  # Adjust width of the plot
-            height=500  # Adjust height of the plot
+            width=400,  # Adjust width of the plot
+            height=200  # Adjust height of the plot
         )
         st.plotly_chart(fig1)
         st.write('The above plot shows the population of a country from 1960 to 2021, star represents the predicted population for the given year')

@@ -9,7 +9,7 @@ import streamlit as st
 import plotly.express as px  
 import plotly.graph_objects as go
 from numerize import numerize 
-st. set_page_config(layout="wide")
+st. set_page_config(layout="centered")
 
 # IMPORT DATASETS
 countries_pop = pd.read_csv(r'datasets/Countries_Population_final.csv')

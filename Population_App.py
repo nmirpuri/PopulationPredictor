@@ -11,6 +11,42 @@ import plotly.graph_objects as go
 from numerize import numerize 
 st. set_page_config(layout="centered")
 
+st.markdown(
+    """
+    <style>
+    /* Set all text to a smaller size */
+    body {
+        font-size: 12px;
+    }
+
+    /* Adjust the title size */
+    .streamlit-expanderHeader {
+        font-size: 14px !important;
+    }
+
+    /* Adjust headers */
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 16px !important;
+    }
+
+    /* Adjust text in markdown */
+    .markdown-text-container {
+        font-size: 12px !important;
+    }
+
+    /* Adjust input labels */
+    .stTextInput label, .stSelectbox label {
+        font-size: 12px !important;
+    }
+
+    /* Adjust button text */
+    .stButton>button {
+        font-size: 12px !important;
+    }
+
+    </style>
+    """, unsafe_allow_html=True)
+
 # IMPORT DATASETS
 countries_pop = pd.read_csv(r'datasets/Countries_Population_final.csv')
 countries_name= pd.read_csv(r'datasets/Countries_names.csv')

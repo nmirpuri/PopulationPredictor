@@ -16,7 +16,7 @@ countries_pop = pd.read_csv(r'datasets/Countries_Population_final.csv')
 countries_name= pd.read_csv(r'datasets/Countries_names.csv')
 
 # DASHBOARD TITLE
-col1, col2,col3 = st.columns([2,6,2])
+col1, col2,col3 = st.columns([1,4,1])
 with col1:
     pass
 with col2:
@@ -100,5 +100,9 @@ with col2:
                                 colorscale='reds', # one of plotly colorscales                                
                                 )
                                 ))
+        fig1.update_layout(
+            width=800,  # Adjust width of the plot
+            height=500  # Adjust height of the plot
+        )
         st.plotly_chart(fig1)
         st.write('The above plot shows the population of a country from 1960 to 2021, star represents the predicted population for the given year')

@@ -16,32 +16,32 @@ st.markdown(
     <style>
     /* Set all text to a smaller size */
     body {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /* Adjust the title size */
     .streamlit-expanderHeader {
-        font-size: 14px !important;
+        font-size: 12px !important;
     }
 
     /* Adjust headers */
     h1, h2, h3, h4, h5, h6 {
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
 
     /* Adjust text in markdown */
     .markdown-text-container {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
 
     /* Adjust input labels */
     .stTextInput label, .stSelectbox label {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
 
     /* Adjust button text */
     .stButton>button {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
 
     </style>
@@ -137,8 +137,8 @@ with col2:
                                 )
                                 ))
         fig1.update_layout(
-            width=400,  # Adjust width of the plot
-            height=400  # Adjust height of the plot
+            width=300,  # Adjust width of the plot
+            height=300  # Adjust height of the plot
         )
         st.plotly_chart(fig1)
         st.write('The above plot shows the population of a country from 1960 to 2021, star represents the predicted population for the given year')
